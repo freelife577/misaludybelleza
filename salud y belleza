@@ -1,0 +1,1535 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SaludyEstetica | Salud estética y belleza</title>
+
+<meta name="description" content="Portal informativo sobre salud estética y belleza en España.">
+<meta name="keywords" content="salud estética, belleza, skincare, rejuvenecimiento, medicina estética">
+<meta name="author" content="SaludyEstetica">
+
+<style>
+:root{
+    --gold:#D4AF37;
+    --pink:#F8C8DC;
+    --blue:#3A7BD5;
+    --black:#111111;
+    --white:#FFFFFF;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:var(--white);
+    color:var(--black);
+    line-height:1.6;
+}
+
+header{
+    background: linear-gradient(135deg,var(--gold),var(--pink));
+    color:white;
+    padding:20px 10%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    margin-left:20px;
+    font-weight:bold;
+}
+
+.hero{
+    height:90vh;
+    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+                url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
+.hero-content h1{
+    font-size:48px;
+}
+
+.hero-content p{
+    margin:20px 0;
+    font-size:20px;
+}
+
+.btn{
+    background:var(--gold);
+    color:white;
+    padding:12px 25px;
+    border-radius:30px;
+    text-decoration:none;
+}
+
+section{
+    padding:80px 10%;
+}
+
+h2{
+    text-align:center;
+    color:var(--blue);
+    margin-bottom:40px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#f8f8f8;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.blog article{
+    background:white;
+    border-left:5px solid var(--gold);
+    padding:20px;
+    margin-bottom:20px;
+}
+
+.contact form{
+    max-width:600px;
+    margin:auto;
+}
+
+input, textarea{
+    width:100%;
+    padding:15px;
+    margin-bottom:15px;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+button{
+    background:var(--blue);
+    color:white;
+    border:none;
+    padding:15px 25px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+footer{
+    background:var(--black);
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+@media(max-width:768px){
+    .hero-content h1{
+        font-size:32px;
+    }
+
+    nav{
+        display:none;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">SaludyEstetica</div>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#salud">Salud Estética</a>
+        <a href="#belleza">Belleza</a>
+        <a href="#blog">Blog</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+</header>
+
+<section class="hero" id="inicio">
+    <div class="hero-content">
+        <h1>SaludyEstetica</h1>
+
+        <p>
+        Información y tendencias en salud estética y belleza para cuidar tu bienestar.
+        </p>
+
+        <a href="#blog" class="btn">Explorar artículos</a>
+    </div>
+</section>
+
+<section id="salud">
+    <h2>Salud Estética</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Cuidado Facial</h3>
+            <p>Consejos y rutinas para mantener una piel saludable.</p>
+        </div>
+
+        <div class="card">
+            <h3>Medicina Estética</h3>
+            <p>Información sobre tratamientos no invasivos.</p>
+        </div>
+
+        <div class="card">
+            <h3>Rejuvenecimiento</h3>
+            <p>Técnicas modernas para el bienestar estético.</p>
+        </div>
+
+        <div class="card">
+            <h3>Hábitos Saludables</h3>
+            <p>Nutrición y estilo de vida para una belleza integral.</p>
+        </div>
+    </div>
+</section>
+
+<section id="belleza">
+    <h2>Belleza</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Skincare</h3>
+        </div>
+
+        <div class="card">
+            <h3>Maquillaje</h3>
+        </div>
+
+        <div class="card">
+            <h3>Tratamientos Capilares</h3>
+        </div>
+
+        <div class="card">
+            <h3>Tendencias de Belleza</h3>
+        </div>
+    </div>
+</section>
+
+<section id="blog" class="blog">
+    <h2>Blog</h2>
+
+    <article>
+        <h3>¿Qué es el ácido hialurónico?</h3>
+        <p>Descubre sus usos y beneficios en medicina estética.</p>
+    </article>
+
+    <article>
+        <h3>Beneficios de la radiofrecuencia facial</h3>
+        <p>Tratamiento popular para mejorar la firmeza de la piel.</p>
+    </article>
+
+    <article>
+        <h3>Rutinas de cuidado de la piel</h3>
+        <p>Consejos para una piel saludable y luminosa.</p>
+    </article>
+
+    <article>
+        <h3>Tratamientos estéticos más populares en España</h3>
+        <p>Tendencias actuales del sector.</p>
+    </article>
+</section>
+
+<section id="nosotros">
+    <h2>Sobre Nosotros</h2>
+
+    <p>
+        SaludyEstetica es una plataforma informativa dedicada a divulgar
+        contenidos sobre salud estética, bienestar y belleza,
+        promoviendo información actualizada y responsable.
+    </p>
+</section>
+
+<section id="contacto" class="contact">
+    <h2>Contacto</h2>
+
+    <form>
+        <input type="text" placeholder="Nombre">
+        <input type="email" placeholder="Correo electrónico">
+        <textarea rows="5" placeholder="Mensaje"></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 SaludyEstetica · España · Todos los derechos reservados</p>
+</footer>
+
+</body>
+# index.html — SaludyEstetica Luxury Clinic (Parte 1)
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SaludyEstetica | Salud Estética y Belleza</title>
+
+    <meta name="description"
+          content="Portal informativo sobre salud estética, belleza y bienestar en España.">
+
+    <meta name="keywords"
+          content="salud estética, belleza, skincare, rejuvenecimiento, medicina estética">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="header">
+
+    <div class="logo">
+        <span>Salud</span>yEstetica
+    </div>
+
+    <nav class="nav">
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#belleza">Belleza</a>
+        <a href="#blog">Blog</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <div class="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+
+</header>
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+        <h1>
+            La excelencia en salud estética y belleza
+        </h1>
+
+        <p>
+            Información y tendencias para cuidar tu bienestar,
+            piel y belleza con elegancia y confianza.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#servicios" class="btn btn-gold">
+                Descubrir
+            </a>
+
+            <a href="#blog" class="btn btn-outline">
+                Leer Blog
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- SERVICIOS -->
+<section class="services section" id="servicios">
+
+    <div class="section-title">
+        <h2>Salud Estética</h2>
+        <p>Información responsable y tendencias del sector.</p>
+    </div>
+
+    <div class="cards">
+
+        <div class="card glass">
+            <i class="fa-solid fa-face-smile"></i>
+            <h3>Cuidado Facial</h3>
+            <p>
+                Rutinas, prevención y cuidado diario de la piel.
+            </p>
+        </div>
+
+        <div class="card glass">
+            <i class="fa-solid fa-syringe"></i>
+            <h3>Medicina Estética</h3>
+            <p>
+                Información sobre tratamientos no invasivos.
+            </p>
+        </div>
+
+        <div class="card glass">
+            <i class="fa-solid fa-spa"></i>
+            <h3>Rejuvenecimiento</h3>
+            <p>
+                Tendencias modernas para una apariencia saludable.
+            </p>
+        </div>
+
+        <div class="card glass">
+            <i class="fa-solid fa-heart"></i>
+            <h3>Bienestar Integral</h3>
+            <p>
+                Belleza y salud desde una perspectiva global.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- BELLEZA -->
+<section class="beauty section" id="belleza">
+
+    <div class="section-title">
+        <h2>Belleza Premium</h2>
+    </div>
+
+    <div class="beauty-grid">
+
+        <div class="beauty-item">
+            <h3>Skincare</h3>
+        </div>
+
+        <div class="beauty-item">
+            <h3>Maquillaje</h3>
+        </div>
+
+        <div class="beauty-item">
+            <h3>Tratamientos Capilares</h3>
+        </div>
+
+        <div class="beauty-item">
+            <h3>Tendencias de Belleza</h3>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ESTADÍSTICAS -->
+<section class="stats">
+
+    <div class="stat">
+        <h3>500+</h3>
+        <p>Artículos</p>
+    </div>
+
+    <div class="stat">
+        <h3>100+</h3>
+        <p>Temas</p>
+    </div>
+
+    <div class="stat">
+        <h3>100%</h3>
+        <p>Información Responsable</p>
+    </div>
+
+</section>
+
+<!-- BLOG -->
+<section class="blog section" id="blog">
+
+    <div class="section-title">
+        <h2>Blog Destacado</h2>
+    </div>
+
+    <div class="blog-grid">
+
+        <article class="blog-card">
+            <h3>¿Qué es el ácido hialurónico?</h3>
+            <p>
+                Conoce sus beneficios y aplicaciones.
+            </p>
+            <a href="#">Leer más</a>
+        </article>
+
+        <article class="blog-card">
+            <h3>Radiofrecuencia Facial</h3>
+            <p>
+                Beneficios para el rejuvenecimiento.
+            </p>
+            <a href="#">Leer más</a>
+        </article>
+
+        <article class="blog-card">
+            <h3>Rutinas de Skincare</h3>
+            <p>
+                Crea una piel saludable y luminosa.
+            </p>
+            <a href="#">Leer más</a>
+        </article>
+
+    </div>
+
+</section>
+
+<!-- SOBRE NOSOTROS -->
+<section class="about section" id="nosotros">
+
+    <div class="about-content">
+
+        <h2>Sobre SaludyEstetica</h2>
+
+        <p>
+            Plataforma informativa dedicada a divulgar
+            contenidos sobre salud estética, bienestar
+            y belleza, promoviendo información actualizada
+            y responsable.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- CONTACTO -->
+<section class="contact section" id="contacto">
+
+    <div class="section-title">
+        <h2>Contacto</h2>
+    </div>
+
+    <form class="contact-form">
+
+        <input type="text" placeholder="Nombre">
+
+        <input type="email" placeholder="Correo electrónico">
+
+        <textarea rows="6"
+                  placeholder="Escribe tu mensaje"></textarea>
+
+        <button class="btn btn-gold">
+            Enviar mensaje
+        </button>
+
+    </form>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+
+    <div class="footer-content">
+
+        <h3>SaludyEstetica</h3>
+
+        <p>
+            Elegancia, bienestar y belleza.
+        </p>
+
+        <div class="socials">
+
+            <a href="#">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="#">
+                <i class="fab fa-facebook"></i>
+            </a>
+
+            <a href="#">
+                <i class="fab fa-x-twitter"></i>
+            </a>
+
+        </div>
+
+        <p class="copy">
+            © 2026 SaludyEstetica · España
+        </p>
+
+    </div>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+```
+# style.css — SaludyEstetica Luxury Clinic (Parte 2)
+
+```css id="s9x7p2"
+/* ==========================
+   VARIABLES
+========================== */
+:root{
+    --gold:#D4AF37;
+    --gold-light:#e8c866;
+    --pink:#F8C8DC;
+    --blue:#3A7BD5;
+    --black:#111111;
+    --white:#FFFFFF;
+    --ivory:#FAF9F6;
+    --gray:#6d6d6d;
+
+    --shadow:0 20px 50px rgba(0,0,0,.08);
+    --radius:20px;
+    --transition:.35s ease;
+}
+
+/* ==========================
+   RESET
+========================== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Montserrat', sans-serif;
+    background:var(--ivory);
+    color:var(--black);
+    overflow-x:hidden;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+}
+
+ul{
+    list-style:none;
+}
+
+.section{
+    padding:100px 10%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.section-title h2{
+    font-family:'Playfair Display', serif;
+    font-size:3rem;
+    margin-bottom:15px;
+    color:var(--black);
+}
+
+.section-title p{
+    color:var(--gray);
+}
+
+/* ==========================
+   HEADER
+========================== */
+.header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:999;
+    background:rgba(255,255,255,.10);
+    backdrop-filter:blur(18px);
+    border-bottom:1px solid rgba(255,255,255,.2);
+}
+
+.logo{
+    font-size:2rem;
+    font-weight:700;
+    color:var(--black);
+}
+
+.logo span{
+    color:var(--gold);
+}
+
+.nav{
+    display:flex;
+    gap:30px;
+}
+
+.nav a{
+    color:var(--black);
+    font-weight:500;
+    position:relative;
+}
+
+.nav a::after{
+    content:'';
+    position:absolute;
+    left:0;
+    bottom:-6px;
+    width:0;
+    height:2px;
+    background:var(--gold);
+    transition:var(--transition);
+}
+
+.nav a:hover::after{
+    width:100%;
+}
+
+.menu-toggle{
+    display:none;
+    font-size:1.8rem;
+    cursor:pointer;
+}
+
+/* ==========================
+   HERO
+========================== */
+.hero{
+    min-height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+    url('https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=1600&q=80');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    position:relative;
+    color:white;
+}
+
+.hero-content{
+    max-width:850px;
+    z-index:2;
+    padding:20px;
+}
+
+.hero h1{
+    font-family:'Playfair Display', serif;
+    font-size:4rem;
+    margin-bottom:25px;
+    animation:fadeUp 1s ease;
+}
+
+.hero p{
+    font-size:1.2rem;
+    line-height:1.8;
+    margin-bottom:35px;
+    animation:fadeUp 1.4s ease;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+/* ==========================
+   BOTONES
+========================== */
+.btn{
+    padding:15px 35px;
+    border-radius:50px;
+    transition:var(--transition);
+    display:inline-block;
+    font-weight:600;
+}
+
+.btn-gold{
+    background:linear-gradient(135deg,var(--gold),var(--gold-light));
+    color:white;
+    box-shadow:0 10px 30px rgba(212,175,55,.3);
+}
+
+.btn-gold:hover{
+    transform:translateY(-5px);
+}
+
+.btn-outline{
+    border:2px solid white;
+    color:white;
+}
+
+.btn-outline:hover{
+    background:white;
+    color:var(--black);
+}
+
+/* ==========================
+   GLASSMORPHISM
+========================== */
+.glass{
+    background:rgba(255,255,255,.15);
+    backdrop-filter:blur(12px);
+    border:1px solid rgba(255,255,255,.2);
+}
+
+/* ==========================
+   TARJETAS
+========================== */
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    border-radius:var(--radius);
+    padding:40px 30px;
+    box-shadow:var(--shadow);
+    transition:var(--transition);
+    text-align:center;
+}
+
+.card i{
+    font-size:2.5rem;
+    color:var(--gold);
+    margin-bottom:20px;
+}
+
+.card h3{
+    margin-bottom:15px;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 25px 45px rgba(0,0,0,.12);
+}
+
+/* ==========================
+   BELLEZA
+========================== */
+.beauty-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.beauty-item{
+    background:linear-gradient(135deg,var(--pink),white);
+    padding:70px 30px;
+    border-radius:var(--radius);
+    text-align:center;
+    transition:var(--transition);
+    box-shadow:var(--shadow);
+}
+
+.beauty-item:hover{
+    transform:scale(1.03);
+}
+
+/* ==========================
+   ESTADÍSTICAS
+========================== */
+.stats{
+    background:var(--black);
+    color:white;
+    padding:90px 10%;
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    gap:30px;
+}
+
+.stat{
+    text-align:center;
+}
+
+.stat h3{
+    font-size:3rem;
+    color:var(--gold);
+}
+
+.stat p{
+    margin-top:10px;
+}
+
+/* ==========================
+   BLOG
+========================== */
+.blog-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.blog-card{
+    background:white;
+    border-radius:var(--radius);
+    padding:35px;
+    box-shadow:var(--shadow);
+    transition:var(--transition);
+}
+
+.blog-card:hover{
+    transform:translateY(-10px);
+}
+
+.blog-card h3{
+    margin-bottom:15px;
+}
+
+.blog-card p{
+    color:var(--gray);
+    margin-bottom:20px;
+}
+
+.blog-card a{
+    color:var(--gold);
+    font-weight:700;
+}
+
+/* ==========================
+   ABOUT
+========================== */
+.about{
+    background:white;
+}
+
+.about-content{
+    max-width:850px;
+    margin:auto;
+    text-align:center;
+}
+
+.about h2{
+    font-family:'Playfair Display', serif;
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+.about p{
+    line-height:1.9;
+    color:var(--gray);
+}
+
+/* ==========================
+   CONTACTO
+========================== */
+.contact-form{
+    max-width:700px;
+    margin:auto;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:18px;
+    margin-bottom:20px;
+    border:none;
+    border-radius:15px;
+    background:white;
+    box-shadow:var(--shadow);
+    outline:none;
+}
+
+.contact-form textarea{
+    resize:vertical;
+}
+
+/* ==========================
+   FOOTER
+========================== */
+footer{
+    background:var(--black);
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+}
+
+.socials{
+    margin:20px 0;
+}
+
+.socials a{
+    color:var(--gold);
+    font-size:1.5rem;
+    margin:0 10px;
+    transition:var(--transition);
+}
+
+.socials a:hover{
+    transform:translateY(-5px);
+}
+
+.copy{
+    color:#ccc;
+    margin-top:20px;
+}
+
+/* ==========================
+   ANIMACIONES
+========================== */
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.fade-in{
+    opacity:0;
+    transform:translateY(40px);
+    transition:1s ease;
+}
+
+.fade-in.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+@media(max-width:992px){
+
+    .hero h1{
+        font-size:3rem;
+    }
+
+    .nav{
+        display:none;
+    }
+
+    .menu-toggle{
+        display:block;
+    }
+
+    .section{
+        padding:80px 6%;
+    }
+}
+
+@media(max-width:768px){
+
+    .hero h1{
+        font-size:2.4rem;
+    }
+
+    .hero p{
+        font-size:1rem;
+    }
+
+    .stats{
+        flex-direction:column;
+    }
+
+    .section-title h2{
+        font-size:2.2rem;
+    }
+}
+```
+# script.js — SaludyEstetica Luxury Clinic (Parte 3)
+
+```javascript id="7m2kq9"
+// ================================
+// MENÚ MÓVIL
+// ================================
+
+const menuToggle = document.querySelector(".menu-toggle");
+const nav = document.querySelector(".nav");
+
+menuToggle.addEventListener("click", () => {
+    nav.classList.toggle("active");
+});
+
+// ================================
+// NAVBAR DINÁMICA AL HACER SCROLL
+// ================================
+
+const header = document.querySelector(".header");
+
+window.addEventListener("scroll", () => {
+
+    if(window.scrollY > 50){
+        header.style.background = "rgba(255,255,255,.95)";
+        header.style.boxShadow = "0 10px 30px rgba(0,0,0,.08)";
+    } else {
+        header.style.background = "rgba(255,255,255,.10)";
+        header.style.boxShadow = "none";
+    }
+
+});
+
+// ================================
+// ANIMACIONES AL HACER SCROLL
+// ================================
+
+const observer = new IntersectionObserver((entries) => {
+
+    entries.forEach(entry => {
+
+        if(entry.isIntersecting){
+            entry.target.classList.add("show");
+        }
+
+    });
+
+},{
+    threshold:0.15
+});
+
+document.querySelectorAll(
+    ".card, .beauty-item, .blog-card, .stat, .about-content"
+).forEach(item => {
+
+    item.classList.add("fade-in");
+    observer.observe(item);
+
+});
+
+// ================================
+// CONTADORES ANIMADOS
+// ================================
+
+const counters = document.querySelectorAll(".stat h3");
+
+const animateCounter = (counter) => {
+
+    const text = counter.innerText;
+    const target = parseInt(text.replace(/\D/g,''));
+
+    if(isNaN(target)) return;
+
+    let current = 0;
+    const increment = Math.ceil(target / 80);
+
+    const update = () => {
+
+        current += increment;
+
+        if(current >= target){
+            current = target;
+
+            if(text.includes('%')){
+                counter.innerText = current + '%';
+            } else if(text.includes('+')){
+                counter.innerText = current + '+';
+            } else {
+                counter.innerText = current;
+            }
+
+            return;
+        }
+
+        if(text.includes('%')){
+            counter.innerText = current + '%';
+        } else if(text.includes('+')){
+            counter.innerText = current + '+';
+        } else {
+            counter.innerText = current;
+        }
+
+        requestAnimationFrame(update);
+
+    };
+
+    update();
+};
+
+const statObserver = new IntersectionObserver((entries) => {
+
+    entries.forEach(entry => {
+
+        if(entry.isIntersecting){
+
+            animateCounter(
+                entry.target.querySelector("h3")
+            );
+
+            statObserver.unobserve(entry.target);
+
+        }
+
+    });
+
+},{
+    threshold:0.5
+});
+
+document.querySelectorAll(".stat").forEach(stat => {
+    statObserver.observe(stat);
+});
+
+// ================================
+// SCROLL SUAVE PARA ENLACES
+// ================================
+
+document.querySelectorAll('a[href^="#"]')
+.forEach(anchor => {
+
+    anchor.addEventListener('click', function(e){
+
+        e.preventDefault();
+
+        const target = document.querySelector(
+            this.getAttribute('href')
+        );
+
+        if(target){
+
+            target.scrollIntoView({
+                behavior: 'smooth'
+            });
+
+            nav.classList.remove("active");
+        }
+
+    });
+
+});
+
+// ================================
+// EFECTO PARALLAX HERO
+// ================================
+
+window.addEventListener("scroll", () => {
+
+    const hero = document.querySelector(".hero");
+
+    let offset = window.pageYOffset;
+
+    hero.style.backgroundPositionY =
+        offset * 0.4 + "px";
+
+});
+
+// ================================
+// MENSAJE TEMPORAL DEL FORMULARIO
+// ================================
+
+const form = document.querySelector(".contact-form");
+
+if(form){
+
+    form.addEventListener("submit", function(e){
+
+        e.preventDefault();
+
+        alert(
+            "Gracias por contactar con SaludyEstetica."
+        );
+
+        form.reset();
+
+    });
+
+}
+```
+# Parte 4 — SEO Avanzado para SaludyEstetica
+
+## 1. robots.txt
+
+Crea un archivo llamado `robots.txt` en la raíz del sitio:
+
+```txt id="rbt001"
+User-agent: *
+Allow: /
+
+Sitemap: https://www.saludyestetica.es/sitemap.xml
+```
+
+---
+
+## 2. sitemap.xml
+
+Crea un archivo llamado `sitemap.xml`:
+
+```xml id="smp001"
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <url>
+        <loc>https://www.saludyestetica.es/</loc>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://www.saludyestetica.es/#servicios</loc>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://www.saludyestetica.es/#blog</loc>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://www.saludyestetica.es/#contacto</loc>
+        <priority>0.7</priority>
+    </url>
+
+</urlset>
+```
+
+---
+
+## 3. Open Graph y SEO social
+
+Añade estas etiquetas dentro del `<head>` de `index.html`:
+
+```html id="og001"
+<meta property="og:type" content="website">
+<meta property="og:title" content="SaludyEstetica | Salud estética y belleza">
+<meta property="og:description"
+      content="Portal informativo sobre salud estética, belleza y bienestar en España.">
+
+<meta property="og:image"
+      content="https://www.saludyestetica.es/images/og-image.jpg">
+
+<meta property="og:url"
+      content="https://www.saludyestetica.es">
+
+<meta property="og:site_name"
+      content="SaludyEstetica">
+
+<meta name="twitter:card"
+      content="summary_large_image">
+
+<meta name="twitter:title"
+      content="SaludyEstetica">
+
+<meta name="twitter:description"
+      content="Salud estética y belleza informativa.">
+
+<meta name="twitter:image"
+      content="https://www.saludyestetica.es/images/og-image.jpg">
+```
+
+---
+
+## 4. Etiqueta canonical
+
+Añade esta línea en el `<head>`:
+
+```html id="can001"
+<link rel="canonical"
+      href="https://www.saludyestetica.es/">
+```
+
+---
+
+## 5. Favicon
+
+Coloca tu icono dentro de la carpeta:
+
+```text id="fav001"
+/images/favicon.png
+```
+
+Y añade al `<head>`:
+
+```html id="fav002"
+<link rel="icon"
+      type="image/png"
+      href="images/favicon.png">
+```
+
+---
+
+## 6. Schema.org (JSON-LD)
+
+Añade este bloque antes de cerrar `</head>`:
+
+```html id="sch001"
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "SaludyEstetica",
+  "url": "https://www.saludyestetica.es",
+  "description": "Portal informativo sobre salud estética y belleza.",
+  "inLanguage": "es",
+  "publisher": {
+    "@type": "Organization",
+    "name": "SaludyEstetica"
+  }
+}
+</script>
+```
+
+---
+
+## 7. Estructura recomendada del proyecto
+
+```text id="tree001"
+saludyestetica/
+│
+├── index.html
+├── style.css
+├── script.js
+├── robots.txt
+├── sitemap.xml
+│
+├── images/
+│   ├── hero.jpg
+│   ├── og-image.jpg
+│   ├── favicon.png
+│   └── logo.png
+│
+└── assets/
+```
+
+---
+
+## 8. Optimización de rendimiento
+
+* Comprime imágenes en formato WebP.
+* Activa caché del navegador.
+* Minifica CSS y JavaScript antes de publicar.
+* Usa carga diferida (`loading="lazy"`) en imágenes:
+
+```html id="lazy001"
+<img src="images/hero.webp"
+     loading="lazy"
+     alt="Clínica estética">
+```
+
+---
+
+## 9. Publicación recomendada
+
+Opciones para publicar el sitio:
+
+* GitHub Pages
+* Netlify
+* Vercel
+* Hosting tradicional con dominio `.es`
+<div class="logo">
+    <img src="images/logo.png"
+         alt="SaludyEstetica Logo"
+         height="60">
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+    emailjs.init("TU_PUBLIC_KEY");
+</script>
+
+<script src="script.js"></script>
+TU_PUBLIC_KEY
+<form class="contact-form" id="contact-form">
+
+    <input
+        type="text"
+        name="user_name"
+        placeholder="Nombre"
+        required>
+
+    <input
+        type="email"
+        name="user_email"
+        placeholder="Correo electrónico"
+        required>
+
+    <textarea
+        name="message"
+        rows="6"
+        placeholder="Escribe tu mensaje"
+        required></textarea>
+
+    <button
+        type="submit"
+        class="btn btn-gold">
+        Enviar mensaje
+    </button>
+
+</form>
+
+<p id="form-message"></p>
+// ================================
+// FORMULARIO EMAILJS
+// ================================
+
+const contactForm = document.getElementById("contact-form");
+const formMessage = document.getElementById("form-message");
+
+contactForm.addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    emailjs.sendForm(
+        "TU_SERVICE_ID",
+        "TU_TEMPLATE_ID",
+        this
+    )
+    .then(() => {
+
+        formMessage.innerHTML =
+            "✅ Mensaje enviado correctamente.";
+
+        formMessage.style.color = "#28a745";
+
+        contactForm.reset();
+
+    })
+    .catch((error) => {
+
+        console.error(error);
+
+        formMessage.innerHTML =
+            "❌ Error al enviar el mensaje.";
+
+        formMessage.style.color = "#dc3545";
+
+    });
+
+});
+TU_SERVICE_ID
+TU_TEMPLATE_ID
+Nuevo mensaje desde SaludyEstetica
+Nombre: {{user_name}}
+
+Correo: {{user_email}}
+
+Mensaje:
+
+{{message}}
+#form-message{
+    margin-top:20px;
+    text-align:center;
+    font-weight:600;
+}
+</html>
+```
